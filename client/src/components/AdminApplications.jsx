@@ -82,7 +82,7 @@ const AdminApplications = () => {
 
   useEffect(() => {
     getAllApp();
-  }, []);
+  });
 
   return (
     <>
