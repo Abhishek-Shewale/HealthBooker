@@ -1,4 +1,3 @@
-
 <div id="top">
 <h1 align="center">HealthBooker 🧑‍⚕️</h1>
 
@@ -23,9 +22,9 @@ Welcome to our comprehensive healthcare platform! Our website offers a seamless 
 
 ---
 
-### 🌐 Link:
+<!-- ### 🌐 Link:
 
-<h4> Live Site: https://healthbooker.onrender.com/ </h4>
+<h4> Live Site: https://healthbooker.onrender.com/ </h4> -->
 
 <br>
 

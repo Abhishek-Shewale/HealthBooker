@@ -65,7 +65,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="footer-bottom">
+        {/* <div className="footer-bottom">
           Made by{" "}
           <a
             href="https://www.linkedin.com/in/abhishekshewale/"
@@ -75,7 +75,7 @@ const Footer = () => {
             Abhishek Shewale
           </a>{" "}
           © {new Date().getFullYear()}
-        </div>
+        </div> */}
       </footer>
     </>
   );
