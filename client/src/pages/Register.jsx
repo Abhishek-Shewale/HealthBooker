@@ -28,6 +28,11 @@ function Register() {
 
   const onUpload = async (element) => {
     setLoading(true);
+    if (!element) {
+      toast.error("Please select an image.");
+      setLoading(false);
+      return;
+    }
     if (element.type === "image/jpeg" || element.type === "image/png") {
       const data = new FormData();
       data.append("file", element);
@@ -38,11 +43,16 @@ function Register() {
         body: data,
       })
         .then((res) => res.json())
-        .then((data) => setFile(data.url.toString()));
+        .then((data) => setFile(data.url.toString()))
+        .catch((error) => {
+          console.error("Error uploading image:", error);
+          toast.error("Error uploading image.");
+        })
+        .finally(() => setLoading(false));
     } else {
       toast.error("Please select an image in jpeg or png format");
+      setLoading(false);
     }
-    setLoading(false);
   };
 
   const formSubmit = async (e) => {
